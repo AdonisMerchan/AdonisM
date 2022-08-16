@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TALLER</title>
+</head>
+<body>
+
+<h1>Hola mundo</h1>
+<p>Contenido de la core</p>
+
+{% for presenta in Envia %}
+<h1>{{presenta.titulo}}</h1><br>
+<p>{{presenta.contenido}}</p><br>
+<img src="{{presenta.imagen.url}}" alt="imagen" style="float:center;width:500px;height:350px">
+<h4>{{presenta.fechacreacion}}</h4><br><br>
+{% endfor %}
+
+</body>
+</html>
